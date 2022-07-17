@@ -1,0 +1,508 @@
+/* TODO: get these working dynamically */
+
+:root {
+  --lighterGray: hsl(0, 0%, 95%);
+  --lightGray: hsl(0, 0%, 87%);
+  --mediumGray: hsl(0, 0%, 56%);
+  --darkGray: hsl(0, 0%, 31%);
+  --darkerGray: hsl(0, 0%, 19%);
+
+  --lighterRed: hsl(0, 100%, 95%);
+  --lightRed: hsl(0, 100%, 87%);
+  --mediumRed: hsl(0, 100%, 56%);
+  --darkRed: hsl(0, 100%, 31%);
+  --darkerRed: hsl(0, 100%, 19%);
+
+  --lighterOrange: hsl(30, 100%, 95%);
+  --lightOrange: hsl(30, 100%, 87%);
+  --mediumOrange: hsl(30, 100%, 56%);
+  --darkOrange: hsl(30, 100%, 31%);
+  --darkerOrange: hsl(30, 100%, 19%);
+
+  --lighterYellow: hsl(69, 100%, 95%);
+  --lightYellow: hsl(69, 100%, 87%);
+  --mediumYellow: hsl(69, 100%, 56%);
+  --darkYellow: hsl(69, 100%, 31%);
+  --darkerYellow: hsl(69, 100%, 19%);
+
+  --lighterGreen: hsl(143, 100%, 95%);
+  --lightGreen: hsl(143, 100%, 87%);
+  --mediumGreen: hsl(143, 100%, 56%);
+  --darkGreen: hsl(143, 100%, 31%);
+  --darkerGreen: hsl(143, 100%, 19%);
+
+  --lighterCyan: hsl(180, 100%, 95%);
+  --lightCyan: hsl(180, 100%, 87%);
+  --mediumCyan: hsl(180, 100%, 56%);
+  --darkCyan: hsl(180, 100%, 31%);
+  --darkerCyan: hsl(180, 100%, 19%);
+
+  --lighterBlue: hsl(229, 100%, 95%);
+  --lightBlue: hsl(229, 100%, 87%);
+  --mediumBlue: hsl(229, 100%, 56%);
+  --darkBlue: hsl(229, 100%, 31%);
+  --darkerBlue: hsl(229, 100%, 19%);
+
+  --lighterPurple: hsl(305, 100%, 95%);
+  --lightPurple: hsl(305, 100%, 87%);
+  --mediumPurple: hsl(305, 100%, 56%);
+  --darkPurple: hsl(305, 100%, 31%);
+  --darkerPurple: hsl(305, 100%, 19%);
+
+  --white: #ffffff;
+
+  --textColor: #000000;
+  --buttonTextColor: #ffffff;
+  --cardBackground: #ffffff;
+
+
+
+  /* --lighterColor: var(--lighterGray);
+  --lightColor: var(--lightGray);
+  --mediumColor: var(--mediumGray);
+  --darkColor: var(--darkGray);
+  --darkerColor: var(--darkerGray); */
+
+  /* --lighterColor: var(--lighterRed);
+  --lightColor: var(--lightRed);
+  --mediumColor: var(--mediumRed);
+  --darkColor: var(--darkRed);
+  --darkerColor: var(--darkerRed); */
+
+  /* --lighterColor: var(--lighterOrange);
+  --lightColor: var(--lightOrange);
+  --mediumColor: var(--mediumOrange);
+  --darkColor: var(--darkOrange);
+  --darkerColor: var(--darkerOrange); */
+
+  /* --lighterColor: var(--lighterYellow);
+  --lightColor: var(--lightYellow);
+  --mediumColor: var(--mediumYellow);
+  --darkColor: var(--darkYellow);
+  --darkerColor: var(--darkerYellow); */
+
+  /* --lighterColor: var(--lighterGreen);
+  --lightColor: var(--lightGreen);
+  --mediumColor: var(--mediumGreen);
+  --darkColor: var(--darkGreen);
+  --darkerColor: var(--darkerGreen); */
+
+  --lighterColor: hsl(229, 100%, 95%);
+  --lightColor: hsl(229, 100%, 87%);
+  --mediumColor: hsl(229, 100%, 56%);
+  --darkColor: hsl(229, 100%, 31%);
+  --darkerColor: hsl(229, 100%, 19%);
+
+  /* --lighterColor: var(--lighterPurple);
+  --lightColor: var(--lightPurple);
+  --mediumColor: var(--mediumPurple);
+  --darkColor: var(--darkPurple);
+  --darkerColor: var(--darkerPurple); */
+}
+
+div.gray-theme {
+  --lighterColor: var(--lighterGray);
+  --lightColor: var(--lightGray);
+  --mediumColor: var(--mediumGray);
+  --darkColor: var(--darkGray);
+  --darkerColor: var(--darkerGray);
+}
+
+div.red-theme {
+  --lighterColor: var(--lighterRed);
+  --lightColor: var(--lightRed);
+  --mediumColor: var(--mediumRed);
+  --darkColor: var(--darkRed);
+  --darkerColor: var(--darkerRed);
+}
+
+body {
+  background-color: var(--lightColor) !important;
+  /* background: linear-gradient(180deg, var(--lightColor) 0%, var(--darkGreen) 100%); */
+  background: linear-gradient(180deg, var(--lightColor) 0%, var(--darkerColor) 100%) !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+}
+
+a:link, a:visited {
+  color: var(--darkColor);
+  text-decoration: none;
+}
+
+a:hover {
+  /* honestly bootstrap making you do !important is the worst */
+  color: var(--darkColor) !important;
+  text-decoration: underline;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+.buttonAdd {
+  background-color: var(--darkGreen) !important;
+  color: var(--buttonTextColor);
+}
+
+.buttonEdit {
+  background-color: var(--darkGray) !important;
+  color: var(--buttonTextColor);
+  /* pointer-events: none; */
+}
+
+.buttonOkay {
+  background-color: var(--darkBlue) !important;
+  color: var(--buttonTextColor);
+}
+
+.buttonSave {
+  background-color: var(--darkBlue) !important;
+  color: var(--buttonTextColor);
+}
+
+.buttonSelect {
+  background-color: var(--darkBlue) !important;
+  color: var(--buttonTextColor);
+}
+
+.buttonCancel {
+  background-color: var(--darkGray) !important;
+  color: var(--buttonTextColor);
+}
+
+.buttonActivate {
+  background-color: var(--darkCyan) !important;
+  color: var(--buttonTextColor);
+  /* pointer-events: none; */
+}
+
+.buttonDeactivate {
+  background-color: var(--darkRed) !important;
+  color: var(--buttonTextColor);
+  /* pointer-events: none; */
+}
+
+.buttonRemove {
+  background-color: var(--darkRed) !important;
+  color: var(--buttonTextColor);
+}
+
+.buttonClear {
+  background-color: var(--darkGray) !important;
+  color: var(--buttonTextColor);
+}
+
+.buttonView {
+  background-color: var(--darkCyan) !important;
+  color: var(--buttonTextColor);
+}
+
+.buttonUpload {
+  background-color: var(--darkBlue) !important;
+  color: var(--buttonTextColor);
+}
+
+table.table-hover tbody tr:hover{
+  background-color: var(--lighterColor) !important;
+}
+
+.card {
+  padding: 20px !important;
+}
+
+.miniCard {
+  background-color: var(--lighterColor) !important;
+  color: var(--darkerColor) !important;
+}
+
+.miniCard td, th {
+  color: var(--darkerColor) !important;
+}
+
+.filterCard {
+  padding: 10px !important;
+  margin-bottom: 10px;
+}
+
+.table-header {
+  cursor: pointer;
+}
+
+.filter-toggle {
+  cursor: pointer;
+}
+
+.button-group > button:not(:first-child) {
+  margin-left: 5px;
+}
+
+.imageThumbnail {
+  width: 140px;
+  height: 140px;
+  margin: 2px;
+}
+
+.imageHolder {
+  display: inline;
+}
+
+.imageFadeIn {
+  opacity: 0;
+  transition: 1.5s opacity;
+}
+
+.visible {
+  opacity: 1;
+}
+
+.siteHeader {
+  background-color: var(--cardBackground);
+}
+
+.navItem {
+  padding: 1em;
+}
+
+.navLink {
+  font-weight: bold;
+}
+
+.modal-header {
+  background-color: var(--darkerColor);
+  color: var(--white);
+}
+
+
+
+
+div.page-content img {
+  max-width: 100%;
+  height: auto;
+}
+
+div.page-content iframe {
+  max-width: 100%;
+  /* height: auto; */
+}
+
+div.page-edit {
+  text-align: right;
+}
+
+h1.header {
+  font-size: 1.7em;
+  font-weight: bolder;
+  padding-bottom: .1em;
+}
+
+h2.header {
+  font-size: 1.1em;
+  font-weight: bold;
+  padding-bottom: .1em;
+}
+
+div.comments {
+  padding-left: 3em;
+}
+
+span.tag {
+  margin-right: .8em;
+  font-style: italic;
+  color: #666666; 
+}
+
+span.username {
+  font-weight: bolder;
+}
+
+.card {
+  margin-top: 1em;
+  padding: 1em !important;
+}
+
+label {
+  padding-top: .4em;
+}
+
+.margin-right {
+  margin-right: .8em;
+}
+
+.inline-label {
+  float: left;
+  margin-right: .5em;
+}
+
+.inline-select {
+  float: left;
+}
+
+.image-scroll {
+  float: left;
+  padding: 10px;
+}
+
+.image-medium {
+  width: auto !important;
+  max-width: 100% !important;
+  height: auto;
+}
+
+
+
+
+/* steal all the css */
+div.ReactTags__tags {
+  position: relative;
+}
+
+/* Styles for the input */
+div.ReactTags__tagInput {
+  width: 100%;
+  border-radius: 2px;
+  display: inline-block;
+  
+}
+div.ReactTags__tagInput input.ReactTags__tagInputField {
+  height: 38px !important;
+  /* margin: 0; */
+  font-size: 12px;
+  width: 100%;
+  /* border: 1px solid #eee !important; */
+  border: 1px solid var(--lightColor) !important;
+  border-radius: 0.25rem;
+  /* padding: 0 4px; */
+  padding: 0.375rem .75rem;
+  /* border-color: var(--lightColor) !important; */
+}
+
+div.ReactTags__tagInput input.ReactTags__tagInputField:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  border-radius: .25rem;
+  border-color: var(--lighterColor) !important;
+  outline: 0;
+  box-shadow: 0 0 0.5rem 0.25rem var(--lightColor) !important;
+}
+
+/* Styles for selected tags */
+div.ReactTags__selected span.ReactTags__tag {
+  border: 1px solid #ddd;
+  background: #eee;
+  font-size: 12px;
+  display: inline-block;
+  padding: 5px;
+  margin: 0 5px;
+  cursor: move;
+  border-radius: 2px;
+}
+div.ReactTags__selected button.ReactTags__remove {
+  border: 0px !important;
+  color: #aaa;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+/* Styles for suggestions */
+div.ReactTags__suggestions {
+  position: absolute;
+}
+div.ReactTags__suggestions ul {
+  list-style-type: none;
+  box-shadow: .05em .01em .5em rgba(0,0,0,.2);
+  background: white;
+  width: 200px;
+}
+div.ReactTags__suggestions li {
+  border-bottom: 1px solid #ddd;
+  padding: 5px 10px;
+  margin: 0;
+}
+div.ReactTags__suggestions li mark {
+  text-decoration: underline;
+  background: none;
+  font-weight: 600;
+}
+div.ReactTags__suggestions ul li.ReactTags__activeSuggestion {
+  background: #b7cfe0;
+  cursor: pointer;
+}
+
+
+
+
+/* react dropzone */
+/* div.dropzoneContainer {
+  margin-top: 1em;
+  padding: 1em;
+} */
+
+.dropzone {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-width: 2;
+  border-radius: 2;
+  border-color: var(--lightColor);
+  border-style: dashed;
+  background-color: var(--white);
+  color: var(--mediumColor);
+  transition: border .3s ease-in-out
+}
+
+.thumbs-container {
+  display: 'flex';
+  flex-direction: 'row';
+  flex-wrap: 'wrap';
+  margin-top: 16px;
+};
+
+.thumb {
+  display: 'inline-flex';
+  border-radius: 2;
+  border: '1px solid #eaeaea';
+  margin-bottom: 8;
+  margin-right: 8;
+  width: 100;
+  height: 100;
+  box-sizing: 'border-box';
+};
+
+.thumb-inner {
+  display: 'flex';
+  min-width: 0px;
+  overflow: 'hidden';
+};
+
+.image-preview {
+  display: 'block';
+  width: 'auto';
+  height: '100%';
+};
+
+
+
+
+/* why tf is this necessary to get the one below it to work */
+.form-control {
+
+}
+
+/* TODO: style the other inputs (tags, select) */
+.form-control {
+  border-color: var(--lightColor) !important;
+}
+
+.form-control:focus {
+  color: var(--darkerColor) !important;
+  background-color: #fff !important;
+  border-color: var(--lighterColor) !important;
+  outline: 0;
+  box-shadow: 0 0 0.5rem 0.25rem var(--lightColor) !important;
+}
